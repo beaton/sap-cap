@@ -9,3 +9,5 @@ Getting started: https://cap.cloud.sap/docs/java/
 ## Build
 
 mvn spring-boot:run
+
+Once up and running open: [https://localhost:8080.](http://localhost:8080/)
