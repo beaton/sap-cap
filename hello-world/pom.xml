@@ -27,6 +27,14 @@
 
 	<dependencyManagement>
 		<dependencies>
+		
+			<!-- Makes your application ready for running in SAP BTP, Cloud Foundry environment -->
+			<dependency>
+				<groupId>com.sap.cds</groupId>
+				<artifactId>cds-feature-cloudfoundry</artifactId>
+				<scope>runtime</scope>
+			</dependency>
+	
 			<!-- CDS SERVICES -->
 			<dependency>
 				<groupId>com.sap.cds</groupId>
