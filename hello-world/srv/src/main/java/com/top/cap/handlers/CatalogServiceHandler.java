@@ -16,6 +16,7 @@ import cds.gen.catalogservice.Books;
 @ServiceName(CatalogService_.CDS_NAME)
 public class CatalogServiceHandler implements EventHandler {
 
+	// http://localhost:8080/odata/v4/CatalogService/Books
 	@After(event = CdsService.EVENT_READ)
 	public void discountBooks(Stream<Books> books) {
 		books.filter(b -> b.getTitle() != null && b.getStock() != null)
