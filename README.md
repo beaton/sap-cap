@@ -14,9 +14,29 @@ Getting started: https://cap.cloud.sap/docs/java/
 
 ## Build
 
-mvn spring-boot:run
+Although not recommended, to skip tests add: -Dmaven.test.skip=true
 
-## Web Browser
+If running locally run in development mode you can use AWS credentials locally stored in ~/.aws/credentials folder.
+
+### Debugging
+
+```
+mvn clean install
+```
+
+java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -jar target/users-0.0.1-SNAPSHOT.war.
+
+Using Eclipse, you can then be easily connected to the running application through Debug Configurations and creating a Remote Java Application configuration.
+
+### Production
+
+Alternatively to run without debugging, open up a terminal and type the following:
+
+```
+mvn spring-boot:run
+```
+
+## Run
 
 Once up and running open a web browser: 
 
