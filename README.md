@@ -16,4 +16,9 @@ Getting started: https://cap.cloud.sap/docs/java/
 
 mvn spring-boot:run
 
-Once up and running open: [https://localhost:8080.](http://localhost:8080/)
+## Web Browser
+
+Once up and running open a web browser: 
+
+1. CDS auto-generated endpoint [https://localhost:8080](http://localhost:8080/)
+2. Custom endpoint [https://localhost:8080/catalog](http://localhost:8080/catalog/)
