@@ -31,6 +31,7 @@ public class CatalogController {
 		}
 		
 		// HTTP response object.
+		System.out.print("message");
 		return ResponseEntity.status(200).body(message);		
 	}
 }
