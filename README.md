@@ -22,3 +22,7 @@ Once up and running open a web browser:
 
 1. CDS auto-generated endpoint [https://localhost:8080](http://localhost:8080/)
 2. Custom endpoint [https://localhost:8080/catalog](http://localhost:8080/catalog/)
+
+## CI/CD
+
+CI/CD is being supported through a webhook on this repo that posts to the BTP Cockpit, [SAP CAP Continuous Integration and Delivery Service] (https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/fe74df55b0f54e99bf6e13a3b53e1db0.html).  Instuctions can be found here [Add a Webhook in Github](https://help.sap.com/docs/CONTINUOUS_DELIVERY/99c72101f7ee40d0b2deb4df72ba1ad3/090d4aaa9628426b91c90e8284213040.html).  We could just as easily have used AWS Pipeline, Github Actions or many other options - we chose SAP CI/CD as this is an end-to-end sample of CAP.
